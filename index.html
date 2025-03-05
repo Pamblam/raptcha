@@ -5,6 +5,19 @@
 	</head>
 	<body>
 		
+		<h1>Raptcha</h1>
+		<p>A simple clientside captcha. You style your elements and you handle the form submission. This just provides the tools to make sure your user isn't an evil robot.</p>
+		<ul>
+			<li>Uses a challenge image and an input.</li>
+			<li>Checks for mouse and input events.</li>
+			<li>Checks for brute force attempts (allows 10 tries).</li>
+			<li>Checks user agent for some keywords.</li>
+		</ul>
+		<p>This won't stop a sophisticated bot, but it's free, easy to use, and doens't require a Google API key.</p>
+		<p>See the <a href='https://github.com/Pamblam/raptcha/'>GitHub Repo</a>.</p>
+
+		<hr>
+
 		<div id="raptcha_div"></div>
 		<a href="#" id="refresh_btn">refresh</a><br>
 		<input id="raptcha_input" placeholder="Enter the code to prove you're human"/><br>
@@ -29,7 +42,6 @@
 				e.preventDefault();
 				raptcha.render();
 			});
-
 		</script>
 	</body>
 </html>
